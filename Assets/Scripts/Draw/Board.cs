@@ -1,5 +1,4 @@
-﻿using Photon.Pun;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -109,14 +108,6 @@ namespace FreeDraw
                 no_drawing_on_current_drag = false;
             }
             mouse_was_previously_held_down = mouse_held_down;
-
-            if (Application.platform == RuntimePlatform.Android)
-            {
-                if (Input.GetKey(KeyCode.Escape))
-                {
-                    SceneManager.LoadScene("UI_Scenes");
-                }
-            }
         }
 
 
